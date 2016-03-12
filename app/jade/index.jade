@@ -2,18 +2,22 @@
 html(lang="es")
 	meta(charset="UTF-8")
 	meta(name="viewport", content="width=device-width,user-scalable=no, initial-scale=1.0")
-	link(rel="stylesheet", href="estilos.css")
+	link(rel="stylesheet", href="style.css")
 	script(src="//code.jquery.com/jquery-1.11.3.min.js")
-
-	title PAGINA WEB1
+	title Nueva Semana
 
 body 
 	header
 		.encabezado
-			.item <img src="http://lorempixel.com/image_output/animals-q-c-100-100-1.jpg">
+			.item
+				img(src="http://lorempixel.com/image_output/animals-q-c-100-100-1.jpg")
 				
-		.menu
-			.icono <a href="#">Blog</a><a href="#">Ediciones</a><a href="#">Contacto</a>
+		nav
+			.icono
+				each item in ['Blog', 'Ediciones', 'Contacto']
+					a(href="#")= item
+
+			
 
 	.aprende
 		.texto VACIO 

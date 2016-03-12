@@ -1,7 +1,7 @@
 {
-  "name": "hisk",
+  "name": "nuevasemana",
   "version": "1.0.0",
-  "description": "hisk website",
+  "description": "Nueva Semana Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -36,5 +36,9 @@
     "nib": "^1.1.0",
     "rupture": "^0.6.1",
     "source-map": "^0.5.3"
+  },
+  "dependencies": {
+    "source-map": "^0.5.3",
+    "nib": "^1.1.0"
   }
 }
