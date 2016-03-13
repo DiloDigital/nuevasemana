@@ -8,48 +8,54 @@ html(lang="es")
 
 body 
 	header
-		.encabezado
-			.item
-				img(src="http://lorempixel.com/image_output/animals-q-c-100-100-1.jpg")
+		.header
+			.logo
+				img(src='img/logo-nuevasemana.png')
 				
 		nav
-			.icono
+			.menunav
 				each item in ['Blog', 'Ediciones', 'Contacto']
-					a(href="#")= item
+					li: a(href="#")= item
 
 			
 
-	.aprende
-		.texto VACIO 
-		.suscribete<a href="#">Suscribete</a>
+	.banner_aprende
+		.texto
+			h1 VACION
 
-.nuestro 
+		.suscribete
+			a(href="#") Suscribete
+
+section.nuestro 
 	.titulo Ultimas Noticias
-	.blog1
+	.blog
 		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-6.jpg">			
 		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-7.jpg">			
 		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-8.jpg">			
 		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-9.jpg">			
-	.blog2
+	
 		.bl <img src="http://lorempixel.com/image_output/animals-q-c-200-200-6.jpg">			
 		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-7.jpg">			
 		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-8.jpg">			
 		.bl <img src="http://lorempixel.com/image_output/animals-q-c-200-200-6.jpg">
-	.suscribete1<a href="#">Suscribete</a>		
-.margen  
-		.impresa Ediciones Impresas
-		.cursos1
-			.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-1.jpg">	
-			.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-2.jpg">	
-			.curso <img src="http://lorempixel.com/image_output/city-q-c-200-200-3.jpg">
-			.curso <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-4.jpg">
-		.busqueda 
-			.entrada1 <input type="text" name="name_ano" autofocus placeholder="Año" required />
-			.entrada1<input type="text" name="name_mes" autofocus placeholder="Mes" required />
-			.entrada1<input type="text" name="name_edicion" autofocus placeholder="Edicion" required />
-			.descarga <a href="#">Descargar</a>
+	.suscribete1
+		a(href="#") Suscribete		
 
-.suscribirte
+section.margen
+	.impresa Ediciones Impresas
+	.cursos1
+		.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-1.jpg">	
+		.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-2.jpg">	
+		.curso <img src="http://lorempixel.com/image_output/city-q-c-200-200-3.jpg">
+		.curso <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-4.jpg">
+	.busqueda 
+		.entrada1 <input type="text" name="name_ano" autofocus placeholder="Año" required />
+		.entrada1<input type="text" name="name_mes" autofocus placeholder="Mes" required />
+		.entrada1<input type="text" name="name_edicion" autofocus placeholder="Edicion" required />
+		.descarga 
+			a(href="#") Descargar
+
+section.suscribirte
 		.titulo1 ¿Por que Suscribirte?
 		.dises
 			.dise <img src="http://lorempixel.com/image_output/animals-q-c-200-200-1.jpg">
@@ -57,9 +63,10 @@ body
 			.dise <img src="http://lorempixel.com/image_output/animals-q-c-200-200-2.jpg">	
 			
 			.dise <img src="http://lorempixel.com/image_output/city-q-c-200-200-3.jpg">
-		.suscribete2 <a href="#">Suscribete</a>	
+		.suscribete2 
+			a(href="#") Suscribete	
 
-.ultimo
+section.ultimo
 		
 	.queremos 
 		.aprendiendo <img src="http://lorempixel.com/image_output/animals-q-c-100-100-1.jpg"> <p> LA NUEVA SEMANA, INC.  <br>PO BOX 2344 Paletine, IL 60078 <br> Telefono (847) 239-4815<br> Fax (847) 890-6327 <br>info@lanuevasemana.com</p>
