@@ -1,0 +1,25 @@
+
+<div class="contact__information">
+  <h2 class="titulo1">Contáctanos</h2>
+  <p class="titulo2">Queremos escuchar lo que tienes que decir</p>
+</div>
+<div class="contact__formulario">
+  <form action="enviamail1.php" method="post" class="funcionesform">
+    <div class="form__group">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required="required" class="form__control"/>
+    </div>
+    <div class="form__group">
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Tu correo" required="required" class="form__control"/>
+    </div>
+    <div class="form__group">
+      <label mensaje="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
+    </div>
+    <div class="form__submit">
+      <input id="submit" type="submit" name="submit" value="Enviar Mensaje"/>
+    </div>
+    <div id="form-messages"></div>
+  </form>
+</div>

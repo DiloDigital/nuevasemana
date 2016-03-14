@@ -1,0 +1,82 @@
+
+<main id="main" role="main">
+  <section class="noticias-box">
+    <h2 class="titulo">Ultimas Noticias</h2>
+    <div class="gallery-container boxt">
+      <div class="gallery-item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+      <div class="gallery-item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+      <div class="gallery-item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+      <div class="gallery-item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+      <div class="gallery-item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+      <div class="gallery-item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+      <div class="gallery-item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+      <div class="gallery-item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+    </div><a href="#" class="btn_suscribe">Suscribete</a>
+  </section>
+  <section class="impresa-box">
+    <h2 class="titulo">Ediciones Impresas</h2>
+    <div class="gallery-curso">
+      <div class="curso-item"><img src="img/imagen2.jpg" alt=""/></div>
+      <div class="curso-item"><img src="img/imagen2.jpg" alt=""/></div>
+      <div class="curso-item"><img src="img/imagen2.jpg" alt=""/></div>
+      <div class="curso-item"><img src="img/imagen2.jpg" alt=""/></div>
+    </div>
+    <div class="busqueda"> 
+      <div class="entrada1">
+        <input type="text" name="name_ano" autofocus="autofocus" placeholder="Año" required="required"/>
+      </div>
+      <div class="entrada1">
+        <input type="text" name="name_mes" autofocus="autofocus" placeholder="Mes" required="required"/>
+      </div>
+      <div class="entrada1">
+        <input type="text" name="name_edicion" autofocus="autofocus" placeholder="Edicion" required="required"/>
+      </div>
+    </div>
+    <div class="descarga"><a href="#">Descargar</a></div>
+  </section>
+  <section class="suscribe-box">
+    <h2 class="titulo">¿Por que Suscribirte?</h2>
+    <div class="suscribe-gallery">
+      <div class="suscribe-item"><img src="img/imagen3.jpg" alt=""/></div>
+      <div class="suscribe-item"><img src="img/imagen3.jpg" alt=""/></div>
+      <div class="suscribe-item"><img src="img/imagen3.jpg" alt=""/></div>
+    </div><a href="#" class="btn_suscribe">Suscribete</a>
+  </section>
+  <section class="contacto-box">
+    <div class="contenedor"> 
+      <div class="contact__left"><img src="img/logo-nuevasemana.png" alt=""/>
+        <p>LA NUEVA SEMANA, INC.  </p>
+        <p>PO BOX 2344 Paletine, IL 60078 </p>
+        <p>Telefono (847) 239-4815</p>
+        <p>Fax (847) 890-6327 </p>
+        <p>info@lanuevasemana.com</p>
+      </div>
+      <div class="contact__form">
+        <div class="contact__information">
+          <h2 class="titulo1">Contáctanos</h2>
+          <p class="titulo2">Queremos escuchar lo que tienes que decir</p>
+        </div>
+        <div class="contact__formulario">
+          <form action="enviamail1.php" method="post" class="funcionesform">
+            <div class="form__group">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required="required" class="form__control"/>
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="Tu correo" required="required" class="form__control"/>
+            </div>
+            <div class="form__group">
+              <label mensaje="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
+            </div>
+            <div class="form__submit">
+              <input id="submit" type="submit" name="submit" value="Enviar Mensaje"/>
+            </div>
+            <div id="form-messages"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

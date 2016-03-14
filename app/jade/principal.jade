@@ -1,0 +1,49 @@
+main#main(role="main")
+	section.noticias-box
+		h2.titulo Ultimas Noticias
+		.gallery-container.boxt
+			-for(var i=0; i<8; i++)
+				.gallery-item
+					a(href="#")
+						img(src="img/imagen.jpg", alt="")
+
+		a(href="#").btn_suscribe Suscribete
+
+	section.impresa-box
+		h2.titulo Ediciones Impresas
+		.gallery-curso
+			-for(var i=0; i<4; i++)
+				.curso-item
+					img(src="img/imagen2.jpg", alt="")
+		.busqueda 
+			.entrada1
+				input(type="text", name="name_ano", autofocus, placeholder="Año", required)
+			.entrada1
+				input(type="text", name="name_mes", autofocus, placeholder="Mes", required)
+			.entrada1
+				input(type="text", name="name_edicion", autofocus, placeholder="Edicion", required)
+		.descarga
+			a(href="#") Descargar
+
+	section.suscribe-box
+		h2.titulo ¿Por que Suscribirte?
+		.suscribe-gallery
+			-for(var i=0; i<3; i++)
+				.suscribe-item
+					img(src="img/imagen3.jpg", alt="")
+		
+		a(href="#").btn_suscribe Suscribete
+
+	section.contacto-box
+			
+		.contenedor 
+			.contact__left
+				img(src="img/logo-nuevasemana.png", alt="")
+
+				p LA NUEVA SEMANA, INC.  
+				p PO BOX 2344 Paletine, IL 60078 
+				p Telefono (847) 239-4815
+				p Fax (847) 890-6327 
+				p info@lanuevasemana.com
+			.contact__form
+				include form.jade

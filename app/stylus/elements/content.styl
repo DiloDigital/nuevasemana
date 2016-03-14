@@ -1,5 +1,16 @@
 //edit()
 
++above(b2)
+	.boxt
+		padding 0 10%
+		margin 0 20px
+		
+
+
+.boxt
+	//padding 0 4%
+
+
 .box
 	padding 0em 7%
 	
@@ -51,27 +62,29 @@ a.btn_suscribe
 	border-radius 5px				
 
 
+	
+		
+		
+
 
 .noticias-box
 	text-align center
 	h2.titulo 
 		font-size 40px	
 		font-weight bold
-	.gallery-container
-		display flex
-		flex-wrap wrap
-		padding 0 4%
-		+above(b2)
-			padding 0 6%
-		+above(b3)
-			padding 0 6%
-		+above(b4)
-			padding 0 6%
+
+.gallery-container
+	display flex
+	flex-wrap wrap
+	//padding 0 4%
+	+above(b2)
+		padding 0 6%
+		
 	
 	.gallery-item
 		width calc(100% - 2em)
-		+above(b1)
-			width calc(50% - 2em)
+		/*+above(b1)
+			width calc(50% - 2em)*/
 		+above(b2)
 			width calc(25% - 2em)
 
@@ -92,10 +105,7 @@ a.btn_suscribe
 		padding 0 4%
 		+above(b2)
 			padding 0 6%
-		+above(b3)
-			padding 0 6%
-		+above(b4)
-			padding 0 6%
+		
 	
 	.curso-item
 		width calc(100% - 2em)
@@ -157,10 +167,7 @@ a.btn_suscribe
 		padding 0 4%
 		+above(b2)
 			padding 0 6%
-		+above(b3)
-			padding 0 6%
-		+above(b4)
-			padding 0 6%
+		
 		
 	.suscribe-item
 		width calc(70% - 2em)
@@ -230,4 +237,25 @@ footer
 	p
 		font-size 1em
 		color white
+
+
+
+//********
+//tablet
+//********
+
++above(b1)
+	.noticias-box
+		background red
+		.gallery-item
+			width calc(50% - 2em)
++above(b2)
+	.noticias-box
+		background peru
++above(b3)
+	.noticias-box
+		background verde
++above(b4)
+	.noticias-box
+		background blue
 
