@@ -39,13 +39,16 @@ header
 	p	
 		color #1f5f85
 		font-size 16px	
-	a.btn_suscribe
-		text-decoration none
-		color white
-		background #f6c31b
-		box-shadow 3px 3px 7px black
-		padding 5px 20px
-		border-radius 5px				
+
+a.btn_suscribe
+	display inline-block
+	text-decoration none
+	text-align center
+	color white
+	background #f6c31b
+	box-shadow 3px 3px 7px black
+	padding 5px 20px
+	border-radius 5px				
 
 
 
@@ -57,9 +60,6 @@ header
 	.gallery-container
 		display flex
 		flex-wrap wrap
-		/*max-width 1000px
-		margin-left auto
-		margin-right auto*/
 		padding 0 4%
 		+above(b2)
 			padding 0 6%
@@ -78,130 +78,106 @@ header
 		margin 1em
 		img
 			width 100%
-		
-		
 					
-				
-/*+above(b1)
-	.noticias-item
-		width 70%
-		img
-			width 50%
-			height auto
-	.noticias-box
-		background yellow
-+above(b2)
-	.noticias-box
-		background red
-	.noticias-item
-		width 50%
-		img
-			width 30%
-			height auto
-+above(b3)
-	.noticias-box
-		background verde
-+above(b4)
-	.noticias-box
-		background peru*/
+.impresa-box
+	text-align center
+	h2.titulo
+		font-size 20px
+		font-weight bold
+	.gallery-curso
+		display flex
+		flex-wrap wrap
+		padding 0 4%
+		+above(b2)
+			padding 0 6%
+		+above(b3)
+			padding 0 6%
+		+above(b4)
+			padding 0 6%
+	
+	.curso-item
+		width calc(100% - 2em)
 		
-					
-		
-.suscribete1
+		+above(b1)
+			width calc(50% - 2em)
+		+above(b2)
+			width calc(25% - 2em)
+
+		margin 1em
+		img
+			width 100%
+
+	
+
+.busqueda		
 	display flex
+	flex-wrap wrap	
 	justify-content center
-	padding 20px
+	padding 0 5%
+	+above(b2)
+		padding 0 7%
+	.entrada1				
+		display flex
+		justify-content center
+		//text-align center			
+		border-radius 5px 5px 5px 5px
+		margin 10px 8px
+		input
+			background none
+			border-radius 5px 5px 5px 5px
+
+.descarga
+	margin 10px 0
+	+above(b2)
+		padding 0 7% 
 	a
-		text-decoration none
-		color white
+		display inline-block
+		text-decoration none				
+		color white				
 		background #f6c31b
 		box-shadow: 3px 3px 7px black
-		padding 5px 20px
-		border-radius 5px		
+		padding 10px 50px
+		border-radius 5px 5px 5px 5px  	
+							
 
 
 
-
-.margen 
-	background #022233
-	padding 70px
-	.impresa
-		flex-flow row wrap
-		display flex
-		justify-content space-around
-		text-align center
-		font-size 50px
+.suscribe-box
+	text-align center
+	background white
+	h2.titulo	
+		font-size 20px
 		font-weight bold
-		color white
-						
-	.cursos1
+	.suscribe-gallery
 		display flex
 		flex-wrap wrap
 		justify-content center
+		padding 0 4%
+		+above(b2)
+			padding 0 6%
+		+above(b3)
+			padding 0 6%
+		+above(b4)
+			padding 0 6%
 		
-		.curso
-			margin 5%
-					
-	.busqueda		
-		display flex
-		justify-content center
-		flex-wrap wrap	
-		.entrada1				
-			display flex
-			justify-content center
-			text-align center			
-			border-radius 5px 5px 5px 5px
-			margin 10px 8px
-			input
-				background none
-				border-radius 5px 5px 5px 5px
-				width 200px
-				height 30px
-		.descarga 
-			a
-				display flex
-				text-decoration none				
-				color white				
-				background #f6c31b
-				box-shadow: 3px 3px 7px black
-				padding 10px 50px
-				border-radius 5px 5px 5px 5px  	
-				margin 10px 8px
-							
-.suscribirte
-		display flex
-		flex-direction column 
-		background white
-		padding 70px
-		.titulo1	
-			display flex
-			justify-content center				
-			flex-direction column 
-			font-weight bold
-			text-align center
-			font-size 50px			
-		.dises
-			display flex
-			flex-wrap wrap
-			justify-content center
-			align-items stretch
-			.dise
-				margin 40px 20px;
-				img
-					border-radius 100px
-					border-style solid
-					border-width 7px
-					border-color #2994da																						
-		.suscribete2 			
-			display flex
-			justify-content center
-			a
-				text-decoration none
-				color white
-				background #f6c31b
-				box-shadow: 3px 3px 7px black
-				padding 5px 20px
-				border-radius 5px
+	.suscribe-item
+		width calc(80% - 2em)
+		
+		+above(b1)
+			width calc(40% - 2em)
+			margin 2em
+		+above(b2)
+			width calc(30% - 2em)
+
+		margin 1em
+		img
+			width 100%
+			
+			border solid 6px #2994da
+			border-radius 50%
+			
+			
+		
 .ultimo
 	background #022233
 	.contacto	

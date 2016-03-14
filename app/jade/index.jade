@@ -30,55 +30,37 @@ body
 			.gallery-container
 				-for(var i=0; i<8; i++)
 					.gallery-item
-						img(src="img/imagen.jpg", alt="")
-			
-				//- .gallery-item
-				//- 	img(src="img/imagen.jpg", alt="")
-				//- .gallery-item
-				//- 	img(src="img/imagen.jpg", alt="")
-				//- .gallery-item
-				//- 	img(src="img/imagen.jpg", alt="")
-				//- .gallery-item
-				//- 	img(src="img/imagen.jpg", alt="")
-				//- .gallery-item
-				//- 	img(src="img/imagen.jpg", alt="")
-				//- .gallery-item
-				//- 	img(src="img/imagen.jpg", alt="")
-				//- .gallery-item
-				//- 	img(src="img/imagen.jpg", alt="")
-				//- .gallery-item
-				//- 	img(src="img/imagen.jpg", alt="")
+						a(href="#")
+							img(src="img/imagen.jpg", alt="")
 
 			a(href="#").btn_suscribe Suscribete
 
-
-
-
-
-		section.margen
-			.impresa Ediciones Impresas
-			.cursos1
-				.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-1.jpg">	
-				.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-2.jpg">	
-				.curso <img src="http://lorempixel.com/image_output/city-q-c-200-200-3.jpg">
-				.curso <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-4.jpg">
+		section.impresa-box
+			h2.titulo Ediciones Impresas
+			.gallery-curso
+				-for(var i=0; i<4; i++)
+					.curso-item
+						img(src="img/imagen2.jpg", alt="")
 			.busqueda 
-				.entrada1 <input type="text" name="name_ano" autofocus placeholder="Año" required />
-				.entrada1<input type="text" name="name_mes" autofocus placeholder="Mes" required />
-				.entrada1<input type="text" name="name_edicion" autofocus placeholder="Edicion" required />
-				.descarga 
-					a(href="#") Descargar
+				.entrada1 
+					input(type="text", name="name_ano", autofocus, placeholder="Año", required)
+				.entrada1
+					input(type="text", name="name_mes", autofocus, placeholder="Mes", required)
+				.entrada1
+					input(type="text", name="name_edicion", autofocus, placeholder="Edicion", required)
+			.descarga 
+				a(href="#") Descargar
 
-		section.suscribirte
-				.titulo1 ¿Por que Suscribirte?
-				.dises
-					.dise <img src="http://lorempixel.com/image_output/animals-q-c-200-200-1.jpg">
-					
-					.dise <img src="http://lorempixel.com/image_output/animals-q-c-200-200-2.jpg">	
-					
-					.dise <img src="http://lorempixel.com/image_output/city-q-c-200-200-3.jpg">
-				.suscribete2 
-					a(href="#") Suscribete	
+		section.suscribe-box
+			h2.titulo ¿Por que Suscribirte?
+			.suscribe-gallery
+				.suscribe-item
+					img(src="img/imagen3.jpg", alt="")
+				.suscribe-item
+					img(src="img/imagen3.jpg", alt="")
+				.suscribe-item
+					img(src="img/imagen3.jpg", alt="")
+			a(href="#").btn_suscribe Suscribete
 
 		section.ultimo
 				
