@@ -6,80 +6,94 @@ html(lang="es")
 	script(src="//code.jquery.com/jquery-1.11.3.min.js")
 	title Nueva Semana
 
-body 
-	header
-		.header
-			.logo
-				img(src='img/logo-nuevasemana.png')
+body
+	nav#navigation(role="navigation").box.main_nav
+		a(href="#").logo
+			img(src="img/logo-nuevasemana.png" width="200" height="60")
+		.btn.menu_mobile menu
+
+		.main_nav-cont
+			ul.main_nav-list
+				li.main_nav-item
+					a(href="#").main_nav-link Blog
+					a(href="#").main_nav-link Ediciones
+					a(href="#").main_nav-link Contacto
+
+	header#header(role="banner").box-small.text--center
+		h1 La Nueva Semana
+		p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam magni, optio quidem nesciunt dolores velit consectetur
+		a(href="#").btn_suscribe Suscribete
+
+	main#main(role="main")
+		section.noticias-box
+			h2.titulo Ultimas Noticias
+			.gallery-container
+				-for(var i=0; i<8; i++)
+					.gallery-item
+						img(src="img/imagen.jpg", alt="")
+			
+				//- .gallery-item
+				//- 	img(src="img/imagen.jpg", alt="")
+				//- .gallery-item
+				//- 	img(src="img/imagen.jpg", alt="")
+				//- .gallery-item
+				//- 	img(src="img/imagen.jpg", alt="")
+				//- .gallery-item
+				//- 	img(src="img/imagen.jpg", alt="")
+				//- .gallery-item
+				//- 	img(src="img/imagen.jpg", alt="")
+				//- .gallery-item
+				//- 	img(src="img/imagen.jpg", alt="")
+				//- .gallery-item
+				//- 	img(src="img/imagen.jpg", alt="")
+				//- .gallery-item
+				//- 	img(src="img/imagen.jpg", alt="")
+
+			a(href="#").btn_suscribe Suscribete
+
+
+
+
+
+		section.margen
+			.impresa Ediciones Impresas
+			.cursos1
+				.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-1.jpg">	
+				.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-2.jpg">	
+				.curso <img src="http://lorempixel.com/image_output/city-q-c-200-200-3.jpg">
+				.curso <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-4.jpg">
+			.busqueda 
+				.entrada1 <input type="text" name="name_ano" autofocus placeholder="Año" required />
+				.entrada1<input type="text" name="name_mes" autofocus placeholder="Mes" required />
+				.entrada1<input type="text" name="name_edicion" autofocus placeholder="Edicion" required />
+				.descarga 
+					a(href="#") Descargar
+
+		section.suscribirte
+				.titulo1 ¿Por que Suscribirte?
+				.dises
+					.dise <img src="http://lorempixel.com/image_output/animals-q-c-200-200-1.jpg">
+					
+					.dise <img src="http://lorempixel.com/image_output/animals-q-c-200-200-2.jpg">	
+					
+					.dise <img src="http://lorempixel.com/image_output/city-q-c-200-200-3.jpg">
+				.suscribete2 
+					a(href="#") Suscribete	
+
+		section.ultimo
 				
-		nav
-			.menunav
-				each item in ['Blog', 'Ediciones', 'Contacto']
-					li: a(href="#")= item
+			.queremos 
+				.aprendiendo <img src="http://lorempixel.com/image_output/animals-q-c-100-100-1.jpg"> <p> LA NUEVA SEMANA, INC.  <br>PO BOX 2344 Paletine, IL 60078 <br> Telefono (847) 239-4815<br> Fax (847) 890-6327 <br>info@lanuevasemana.com</p>
+				.contactanos 
+					.escuchar
+						.titulo1 Contáctanos
+						.titulo2<p>Queremos escuchar lo que tienes que decir</p> 
+					.entrada1
+						<form class="funcionesform" action="enviamail1.php" method="post"><input type="text" id="nombre" name="nombre" autofocus placeholder="Tu nombre" required="" /> <input type="email" id="email" name="email" placeholder="Tu correo" required="" /><textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
 
-			
-
-	.banner_aprende
-		.texto
-			h1 VACION
-
-		.suscribete
-			a(href="#") Suscribete
-
-section.nuestro 
-	.titulo Ultimas Noticias
-	.blog
-		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-6.jpg">			
-		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-7.jpg">			
-		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-8.jpg">			
-		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-9.jpg">			
-	
-		.bl <img src="http://lorempixel.com/image_output/animals-q-c-200-200-6.jpg">			
-		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-7.jpg">			
-		.bl <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-8.jpg">			
-		.bl <img src="http://lorempixel.com/image_output/animals-q-c-200-200-6.jpg">
-	.suscribete1
-		a(href="#") Suscribete		
-
-section.margen
-	.impresa Ediciones Impresas
-	.cursos1
-		.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-1.jpg">	
-		.curso <img src="http://lorempixel.com/image_output/animals-q-c-200-200-2.jpg">	
-		.curso <img src="http://lorempixel.com/image_output/city-q-c-200-200-3.jpg">
-		.curso <img src="http://lorempixel.com/image_output/nightlife-q-c-200-200-4.jpg">
-	.busqueda 
-		.entrada1 <input type="text" name="name_ano" autofocus placeholder="Año" required />
-		.entrada1<input type="text" name="name_mes" autofocus placeholder="Mes" required />
-		.entrada1<input type="text" name="name_edicion" autofocus placeholder="Edicion" required />
-		.descarga 
-			a(href="#") Descargar
-
-section.suscribirte
-		.titulo1 ¿Por que Suscribirte?
-		.dises
-			.dise <img src="http://lorempixel.com/image_output/animals-q-c-200-200-1.jpg">
-			
-			.dise <img src="http://lorempixel.com/image_output/animals-q-c-200-200-2.jpg">	
-			
-			.dise <img src="http://lorempixel.com/image_output/city-q-c-200-200-3.jpg">
-		.suscribete2 
-			a(href="#") Suscribete	
-
-section.ultimo
-		
-	.queremos 
-		.aprendiendo <img src="http://lorempixel.com/image_output/animals-q-c-100-100-1.jpg"> <p> LA NUEVA SEMANA, INC.  <br>PO BOX 2344 Paletine, IL 60078 <br> Telefono (847) 239-4815<br> Fax (847) 890-6327 <br>info@lanuevasemana.com</p>
-		.contactanos 
-			.escuchar
-				.titulo1 Contáctanos
-				.titulo2<p>Queremos escuchar lo que tienes que decir</p> 
-			.entrada1
-				<form class="funcionesform" action="enviamail1.php" method="post"><input type="text" id="nombre" name="nombre" autofocus placeholder="Tu nombre" required="" /> <input type="email" id="email" name="email" placeholder="Tu correo" required="" /><textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
-
-			.mensaje
-				<input id="submit" type="submit" name="submit" value="Enviar Mensaje" />
-				
-footer Diseñado por Dilo Digital
+					.mensaje
+						<input id="submit" type="submit" name="submit" value="Enviar Mensaje" />
+						
+		footer Diseñado por Dilo Digital
 
 

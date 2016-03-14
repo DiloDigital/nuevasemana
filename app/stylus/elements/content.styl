@@ -1,88 +1,127 @@
 edit()
 
+.box
+	padding 0em 7%
+	
+.box-small
+	padding 1em 14%
+
+
 body
 	margin 0
 	padding 0
 	font-family sans-serif
+	min-height 100vh
 	
 		
-	header
-		display flex
-		justify-content space-around		
-		background white				
-		.header
-			align-self center
-			.logo
-				padding 10px
-		nav
-			align-self center
-			.menunav
-				display flex
-				align-items center
-				li
-					list-style none
-					a
-						padding 20px
-						text-decoration none
-						color black
-					 
-	.banner_aprende
-		display flex
-		flex-direction column 
-		//background #1f5f85
-		padding 50px
-		.texto	
-			display flex
-			justify-content center
-			text-align center
-			color #1f5f85
-			font-size 50px	
-		.suscribete
-			display flex
-			justify-content center
-			a
-				text-decoration none
-				color white
-				background #f6c31b
-				box-shadow 3px 3px 7px black
-				padding 5px 20px
-				border-radius 5px				
-.nuestro
-	padding 50px
-	.titulo 
-		display flex
-		justify-content center
-		text-align center
-		font-size 50px	
+nav
+	display flex
+	justify-content space-between
+	.logo
+		//padding 10px
+	.btn.menu_mobile
+		display none
+	.main_nav-cont
+		ul
+			padding-left 0
+			li
+				
+				list-style none
+				a
+					//padding 20px
+					margin 0 1em
+					text-decoration none
+					color black
+header
+	background #1976D2
+	h1
+		color green
+	p	
+		color #1f5f85
+		font-size 16px	
+	a.btn_suscribe
+		text-decoration none
+		color white
+		background #f6c31b
+		box-shadow 3px 3px 7px black
+		padding 5px 20px
+		border-radius 5px				
+
+
+
+.noticias-box
+	text-align center
+	h2.titulo 
+		font-size 40px	
 		font-weight bold
-		padding 20px
-	.blog
-		//flex-wrap wrap	
-		flex-flow row wrap
+	.gallery-container
 		display flex
-		justify-content center
-		//flex-wrap wrap
-		//justify-content center
-		.bl
-			margin 20px
-			
-	/*.blog2			
-		flex-wrap wrap	
-		display flex		
-		justify-content center
-		.bl
-			margin 10px 10px	*/					
-	.suscribete1
-		display flex
-		justify-content center
-		padding 20px
-		a
-			text-decoration none
-			color white
-			background #f6c31b
-			box-shadow: 3px 3px 7px black
-			padding 5px 20px
-			border-radius 5px		
+		flex-wrap wrap
+		/*max-width 1000px
+		margin-left auto
+		margin-right auto*/
+		padding 0 4%
+		+above(b2)
+			padding 0 6%
+		+above(b3)
+			padding 0 6%
+		+above(b4)
+			padding 0 6%
+	
+	.gallery-item
+		width calc(100% - 2em)
+		+above(b1)
+			width calc(50% - 2em)
+		+above(b2)
+			width calc(25% - 2em)
+
+		margin 1em
+		img
+			width 100%
+		
+		
+					
+				
+/*+above(b1)
+	.noticias-item
+		width 70%
+		img
+			width 50%
+			height auto
+	.noticias-box
+		background yellow
++above(b2)
+	.noticias-box
+		background red
+	.noticias-item
+		width 50%
+		img
+			width 30%
+			height auto
++above(b3)
+	.noticias-box
+		background verde
++above(b4)
+	.noticias-box
+		background peru*/
+		
+					
+		
+.suscribete1
+	display flex
+	justify-content center
+	padding 20px
+	a
+		text-decoration none
+		color white
+		background #f6c31b
+		box-shadow: 3px 3px 7px black
+		padding 5px 20px
+		border-radius 5px		
+
+
+
+
 .margen 
 	background #022233
 	padding 70px
