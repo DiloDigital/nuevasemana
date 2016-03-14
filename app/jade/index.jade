@@ -3,7 +3,7 @@ html(lang="es")
 	meta(charset="UTF-8")
 	meta(name="viewport", content="width=device-width,user-scalable=no, initial-scale=1.0")
 	link(rel="stylesheet", href="style.css")
-	script(src="//code.jquery.com/jquery-1.11.3.min.js")
+	//- script(src="//code.jquery.com/jquery-1.11.3.min.js")
 	title Nueva Semana
 
 body
@@ -42,40 +42,54 @@ body
 					.curso-item
 						img(src="img/imagen2.jpg", alt="")
 			.busqueda 
-				.entrada1 
+				.entrada1
 					input(type="text", name="name_ano", autofocus, placeholder="Año", required)
 				.entrada1
 					input(type="text", name="name_mes", autofocus, placeholder="Mes", required)
 				.entrada1
 					input(type="text", name="name_edicion", autofocus, placeholder="Edicion", required)
-			.descarga 
+			.descarga
 				a(href="#") Descargar
 
 		section.suscribe-box
 			h2.titulo ¿Por que Suscribirte?
 			.suscribe-gallery
-				.suscribe-item
-					img(src="img/imagen3.jpg", alt="")
-				.suscribe-item
-					img(src="img/imagen3.jpg", alt="")
-				.suscribe-item
-					img(src="img/imagen3.jpg", alt="")
+				-for(var i=0; i<3; i++)
+					.suscribe-item
+						img(src="img/imagen3.jpg", alt="")
+			
 			a(href="#").btn_suscribe Suscribete
 
-		section.ultimo
+		section.contacto-box
 				
-			.queremos 
-				.aprendiendo <img src="http://lorempixel.com/image_output/animals-q-c-100-100-1.jpg"> <p> LA NUEVA SEMANA, INC.  <br>PO BOX 2344 Paletine, IL 60078 <br> Telefono (847) 239-4815<br> Fax (847) 890-6327 <br>info@lanuevasemana.com</p>
-				.contactanos 
-					.escuchar
-						.titulo1 Contáctanos
-						.titulo2<p>Queremos escuchar lo que tienes que decir</p> 
-					.entrada1
-						<form class="funcionesform" action="enviamail1.php" method="post"><input type="text" id="nombre" name="nombre" autofocus placeholder="Tu nombre" required="" /> <input type="email" id="email" name="email" placeholder="Tu correo" required="" /><textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
+			.contenedor 
+				.contact__left
+					img(src="img/logo-nuevasemana.png", alt="")
 
-					.mensaje
-						<input id="submit" type="submit" name="submit" value="Enviar Mensaje" />
+					p LA NUEVA SEMANA, INC.  
+					p PO BOX 2344 Paletine, IL 60078 
+					p Telefono (847) 239-4815
+					p Fax (847) 890-6327 
+					p info@lanuevasemana.com
+				.contact__form
+					.contact__information
+						h2.titulo1 Contáctanos
+						p.titulo2 Queremos escuchar lo que tienes que decir
+					.contact__formulario
+						form(action="enviamail1.php", class="funcionesform",  method="post")
+							.form__group
+								label(for="nombre") Nombre
+								input#nombre(type="text", name="nombre", class="form__control", placeholder="Tu nombre", required)
+							.form__group
+								label(for="email") Email
+								input#email(type="email", name="email", class="form__control", placeholder="Tu correo", required)
+							.form__group		
+								label(mensaje) Mensaje
+								textarea#mensaje(name="mensaje", class="form__control", placeholder="Tu mensaje", required)
+							.form__submit
+								input#submit(type="submit", name="submit", value="Enviar Mensaje")
+							#form-messages
+					
 						
-		footer Diseñado por Dilo Digital
-
-
+		footer
+			p Diseñado por Dilo Digital
