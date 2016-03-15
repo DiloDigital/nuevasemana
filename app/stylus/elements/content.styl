@@ -1,11 +1,12 @@
-edit()
+//edit()
 
 body
 	margin 0 auto
 	padding 0
 	font-family sans-serif
-	//min-height 100vh
-	background url(img/wireframe1280.jpg) green
+	min-height 100vh
+	//background url(img/wireframe1280.jpg) green
+	//height 4000px
 	
 nav.main-nav
 	display flex
@@ -37,15 +38,16 @@ nav.main-nav
 					color black
 					font-size 1.4em
 header.header
-	//background #1976D2
+	color blanco
+	background #1976D2
 	padding-top 2em
 	padding-bottom 4em
-	background-color rgba(blanco,0.7)
+	//background-color rgba(blanco,0.7)
 	
 	h1
-		color green
+		//color green
 	p	
-		color #1f5f85
+		//color #1f5f85
 		font-size 16px
 		margin-bottom 2em
 		
@@ -95,11 +97,11 @@ section.noticias
 section.ediciones
 	padding-top 4em
 	padding-bottom 6em
-	background rgba(verde, 0.6)
-	//background #022233
+	background #022233
 	
 	text-align center
 	h2.titulo
+		color blanco
 		font-size 3em
 		font-weight bold
 .ediciones__box
@@ -157,13 +159,19 @@ section.ediciones
 			border-radius 10px
 			font-size 1.8em
 			font-weight bold
+
+
 								
 section.suscribe
-	//background #fff
+	background #fff
 	text-align center
+	padding-top 6em
+	padding-bottom 6em
+
 	h2.titulo	
-		font-size 20px
+		font-size 3em
 		font-weight bold
+	
 .suscribe__box
 	display flex
 	flex-wrap wrap
@@ -173,15 +181,16 @@ section.suscribe
 		padding 0 6%
 		
 	.suscribe__item
+		padding-bottom 2em
 		width calc(70% - 2em)
 		
 		+above(b1)
 			width calc(50% - 2em)
 		+above(b2)
-			width calc(25% - 2em)
-			margin 2em
+			width calc(30% - 2em)
+			//margin 1em
 
-		margin 1em
+		margin 1.5em
 		img
 			width 100%
 			border solid 6px #2994da
@@ -190,18 +199,23 @@ section.suscribe
 			
 		
 section.contact
-	//background #022233
+	//background rgba(verde, 0.6)
+	//padding-top 2em
+	//padding-bottom 4em
+
+	background #022233
 	.contact__box
 		display flex
 		flex-direction column
-		padding 3.3em 0
+		padding 4em 0
 		
 		+above(b1)
-			align-items center
+			//align-items center
 			//padding 0 15%
 		+above(b2)
 			flex-direction row
 			justify-content center
+			//padding-top 4em
 				
 		.contact__left
 			text-align center
@@ -219,13 +233,15 @@ section.contact
 				text-align left
 		
 		.contact__form
+			//padding-top 3em
 			.contact__information
 				color blanco
 				text-align center
 				h2
-					font-size 2.3em
+					display inline
+					font-size 2.5em
 					font-weight bold
-					line-height 0.5
+					//line-height 0.5
 			.contact__formulario
 				+above(b1)
 					width 430px
