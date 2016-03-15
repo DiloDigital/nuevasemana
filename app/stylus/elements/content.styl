@@ -1,55 +1,54 @@
-//edit()
-
-+above(b2)
-	.boxt
-		padding 0 10%
-		margin 0 20px
-		
-
-
-.boxt
-	//padding 0 4%
-
-
-.box
-	padding 0em 7%
-	
-.box-small
-	padding 1em 14%
-
+edit()
 
 body
-	margin 0
+	margin 0 auto
 	padding 0
 	font-family sans-serif
-	min-height 100vh
+	//min-height 100vh
+	background url(img/wireframe1280.jpg) green
 	
-		
-nav
+nav.main-nav
 	display flex
 	justify-content space-between
+	padding-top 2.5em
+	padding-bottom 2em
+	
 	.logo
-		//padding 10px
-	.btn.menu_mobile
+		img
+			width 75%
+			height auto
+	.btn_menu-mobile
 		display none
-	.main_nav-cont
-		ul
-			padding-left 0
-			li
-				
+	.main-nav__cont
+		align-self flex-end
+		.main-nav__list
+			padding 0
+			margin 0
+			//padding-left 0
+			display flex
+			align-self flex-end
+			.main-nav__item
 				list-style none
-				a
-					//padding 20px
-					margin 0 1em
+				//margin 0 2.5em 
+				a.main-nav__link
+					padding 0 0.8em
+					//margin 0 1em
 					text-decoration none
 					color black
-header
-	background #1976D2
+					font-size 1.4em
+header.header
+	//background #1976D2
+	padding-top 2em
+	padding-bottom 4em
+	background-color rgba(blanco,0.7)
+	
 	h1
 		color green
 	p	
 		color #1f5f85
-		font-size 16px	
+		font-size 16px
+		margin-bottom 2em
+		
 
 a.btn_suscribe
 	display inline-block
@@ -58,118 +57,122 @@ a.btn_suscribe
 	color white
 	background #f6c31b
 	box-shadow 3px 3px 7px black
-	padding 5px 20px
-	border-radius 5px				
+	padding 10px 50px
+	border-radius 10px				
+	font-size 1.8em
+	font-weight bold
 
 
-	
-		
-		
 
-
-.noticias-box
+section.noticias
+	padding-top 1em
+	padding-bottom 3em
 	text-align center
 	h2.titulo 
-		font-size 40px	
+		font-size 3.1em
 		font-weight bold
 
-.gallery-container
+.noticias__box
 	display flex
 	flex-wrap wrap
+	justify-content center
 	//padding 0 4%
+	margin-bottom 3.5em
 	+above(b2)
 		padding 0 6%
-		
 	
-	.gallery-item
+	.noticias__item
 		width calc(100% - 2em)
-		/*+above(b1)
-			width calc(50% - 2em)*/
+		+above(b1)
+			width calc(50% - 2em)
 		+above(b2)
-			width calc(25% - 2em)
+			width calc(25% - 2.8em)
 
-		margin 1em
+		margin 0.7em
 		img
 			width 100%
 					
-.impresa-box
-	background #022233
+section.ediciones
+	padding-top 4em
+	padding-bottom 6em
+	background rgba(verde, 0.6)
+	//background #022233
 	
 	text-align center
 	h2.titulo
-		font-size 20px
+		font-size 3em
 		font-weight bold
-	.gallery-curso
-		display flex
-		flex-wrap wrap
-		padding 0 4%
-		+above(b2)
-			padding 0 6%
+.ediciones__box
+	display flex
+	flex-wrap wrap
+	justify-content center
+	padding 0 4%
+	margin-bottom 7.5em
+	+above(b2)
+		padding 0 6%
 		
-	
-	.curso-item
+	.ediciones__item
+		
 		width calc(100% - 2em)
 		
 		+above(b1)
 			width calc(50% - 2em)
 		+above(b2)
-			width calc(25% - 2em)
+			width calc(25% - 2.8em)
+			
 
-		margin 1em
+		margin 0.7em
 		img
 			width 100%
-
-	
+			
 
 .busqueda		
 	display flex
-	flex-wrap wrap	
-	justify-content center
-	padding 0 5%
-	+above(b2)
-		padding 0 7%
-	.entrada1				
-		display flex
-		justify-content center
-		//text-align center			
-		border-radius 5px 5px 5px 5px
-		margin 10px 8px
+	justify-content space-between
+	//+above(b2)
+	padding 0 10%
+	.entrada			
+		border-radius 5px
+		//margin 0 0.1em
 		input
+			width 87%
 			background none
-			border-radius 5px 5px 5px 5px
+			border-radius 10px
+			font-size 1.2em
+			padding 20px 0px 2px 10px
+			//padding 0.4em 0
 
-.descarga
-	margin auto
-	+above(b2)
-		padding 0 7% 
-	a
-		display inline-block
-		text-decoration none				
-		color white				
-		background #f6c31b
-		box-shadow: 3px 3px 7px black
-		padding 10px 50px
-		border-radius 5px 5px 5px 5px  	
-							
-
-
-
-.suscribe-box
-	background #fff
+	.descarga
+		align-self center
+		border 2px solid #000
+		//margin 0 0.5em
+		+above(b2)
+			//padding 0 7% 
+		a
+			text-decoration none				
+			color white				
+			background #f6c31b
+			//box-shadow: 3px 3px 7px black
+			padding 10px 40px
+			border-radius 10px
+			font-size 1.8em
+			font-weight bold
+								
+section.suscribe
+	//background #fff
 	text-align center
 	h2.titulo	
 		font-size 20px
 		font-weight bold
-	.suscribe-gallery
-		display flex
-		flex-wrap wrap
-		justify-content center
-		padding 0 4%
-		+above(b2)
-			padding 0 6%
+.suscribe__box
+	display flex
+	flex-wrap wrap
+	justify-content center
+	padding 0 4%
+	+above(b2)
+		padding 0 6%
 		
-		
-	.suscribe-item
+	.suscribe__item
 		width calc(70% - 2em)
 		
 		+above(b1)
@@ -186,9 +189,9 @@ a.btn_suscribe
 			
 			
 		
-.contacto-box
-	background #022233
-	.contenedor
+section.contact
+	//background #022233
+	.contact__box
 		display flex
 		flex-direction column
 		padding 3.3em 0
@@ -200,13 +203,12 @@ a.btn_suscribe
 			flex-direction row
 			justify-content center
 				
-			
-		
 		.contact__left
 			text-align center
 			color white			
 			font-size 20px
-			margin 0 80px						
+			margin 0 80px
+			
 			p
 				line-height 0
 				margin 1.3em 0
@@ -247,15 +249,31 @@ footer
 +above(b1)
 	.noticias-box
 		background red
-		.gallery-item
-			width calc(50% - 2em)
 +above(b2)
 	.noticias-box
 		background peru
 +above(b3)
 	.noticias-box
 		background verde
+	
 +above(b4)
 	.noticias-box
 		background blue
 
+
+
+
+.grid-1
+	width calc(100% - 2em)
+.grid-1_5
+	width calc(70% - 2em)
+.grid-2
+	width calc(50% - 2em)
+.grid-4
+	width calc(25% - 2em)
+	
+.wsmall
+	padding 0 10%
+	
+.wmedium
+	padding 0 9%

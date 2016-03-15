@@ -1,42 +1,42 @@
 main#main(role="main")
-	section.noticias-box
+	section.noticias
 		h2.titulo Ultimas Noticias
-		.gallery-container.boxt
+		.noticias__box
 			-for(var i=0; i<8; i++)
-				.gallery-item
+				.noticias__item
 					a(href="#")
 						img(src="img/imagen.jpg", alt="")
 
-		a(href="#").btn_suscribe Suscribete
+		a(href="#").btn_suscribe Suscríbete
 
-	section.impresa-box
+	section.ediciones
 		h2.titulo Ediciones Impresas
-		.gallery-curso
+		.ediciones__box
 			-for(var i=0; i<4; i++)
-				.curso-item
+				.ediciones__item
 					img(src="img/imagen2.jpg", alt="")
 		.busqueda 
-			.entrada1
+			.entrada
 				input(type="text", name="name_ano", autofocus, placeholder="Año", required)
-			.entrada1
+			.entrada
 				input(type="text", name="name_mes", autofocus, placeholder="Mes", required)
-			.entrada1
+			.entrada
 				input(type="text", name="name_edicion", autofocus, placeholder="Edicion", required)
-		.descarga
-			a(href="#") Descargar
+			.descarga
+				a(href="#") Descargar
 
-	section.suscribe-box
+	section.suscribe
 		h2.titulo ¿Por que Suscribirte?
-		.suscribe-gallery
+		.suscribe__box
 			-for(var i=0; i<3; i++)
-				.suscribe-item
+				.suscribe__item
 					img(src="img/imagen3.jpg", alt="")
 		
 		a(href="#").btn_suscribe Suscribete
 
-	section.contacto-box
+	section.contact
 			
-		.contenedor 
+		.contact__box
 			.contact__left
 				img(src="img/logo-nuevasemana.png", alt="")
 
