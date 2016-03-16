@@ -1,79 +1,73 @@
 main#main(role="main")
-	section.noticias
-		.max-width
-			h2.titulo Ultimas Noticias
-			.noticias__box.grid-3-small-2
+	section.noticias.bg--white.text--center
+		div.max-width
+			h2.title--sub2 Ultimas Noticias
+			.noticias__box.grid-2-medium-4
 				-for(var i=0; i<8; i++)
 					.noticias__item
 						a(href="#")
-							img(src="img/imagen.jpg", alt="")
+							img(src="img/imagen.jpg", class="img-responsive", alt="")
 
 			a(href="#").btn_suscribe Suscríbete
 
-	section.ediciones.wrap--small
-		h2.titulo Ediciones Impresas
-		.ediciones__box
-			-for(var i=0; i<4; i++)
-				.ediciones__item
-					img(src="img/imagen2.jpg", alt="")
+	section.ediciones.wrap--small.bg--blue-dark.text--center
+		div.max-width
+			h2.title--sub3.text--white Ediciones Impresas
+			.ediciones__box
+				-for(var i=0; i<4; i++)
+					.ediciones__item
+						img(src="img/imagen2.jpg", alt="")
 
-		.sort
-			.collection-sort
-				label Año
-				select
-					option(value="var") Año
-					option(value="var") 2016
-					option(value="var") 2015
-					option(value="var") 2014
-					option(value="var") 2013
-			.collection-sort
-				label Mes
-				select
-					option(value="var") Mes
-					option(value="var") Dic
-					option(value="var") Ago
-					option(value="var") Abril
-					option(value="var") Ene
-			.collection-sort
-				label Dia
-				select
-					option(value="var") Dia
-					option(value="var") 31
-					option(value="var") 16
-					option(value="var") 08
-					option(value="var") 01
-					
-					
-			.descarga
-				a(href="#") Descargar
+			.sort.text--p1.text--white
+				.collection-sort
+					label Año
+					select
+						option(value="var") Año
+						option(value="var") 2016
+						option(value="var") 2015
+						option(value="var") 2014
+						option(value="var") 2013
+				.collection-sort
+					label Mes
+					select
+						option(value="var") Mes
+						option(value="var") Dic
+						option(value="var") Ago
+						option(value="var") Abril
+						option(value="var") Ene
+				.collection-sort
+					label Dia
+					select
+						option(value="var") Dia
+						option(value="var") 31
+						option(value="var") 16
+						option(value="var") 08
+						option(value="var") 01
+						
+						
+				.descarga
+					a(href="#") Descargar
 
-		//- .busqueda 
-		//- 	.entrada
-		//- 		input(type="text", name="name_ano", autofocus, placeholder="Año", required)
-		//- 	.entrada
-		//- 		input(type="text", name="name_mes", autofocus, placeholder="Mes", required)
-		//- 	.entrada
-		//- 		input(type="text", name="name_edicion", autofocus, placeholder="Edicion", required)
-
-	section.suscribe.wrap--small
-		h2.titulo ¿Por que Suscribirte?
-		.suscribe__box
-			-for(var i=0; i<3; i++)
-				.suscribe__item
-					img(src="img/imagen3.jpg", alt="")
-		
-		a(href="#").btn_suscribe Suscribete
-
-	section.contact.wrap--tiny
+	section.suscribe.wrap--small.bg--white
+		div.max-width
+			h2.title--sub2.text--black ¿Por que Suscribirte?
+			.suscribe__box
+				-for(var i=0; i<3; i++)
+					.suscribe__item
+						img(src="img/imagen3.jpg", alt="")
 			
-		.contact__box
-			.contact__left
-				img(src="img/logo-nuevasemana.png", alt="")
+			a(href="#").btn_suscribe Suscribete
 
-				p LA NUEVA SEMANA, INC.  
-				p PO BOX 2344 Paletine, IL 60078 
-				p Telefono (847) 239-4815
-				p Fax (847) 890-6327 
-				p info@lanuevasemana.com
-			.contact__form
-				include form.jade
+	section.contact.wrap--tiny.bg--blue-dark
+		div.max-width
+			.contact__box
+				.contact__left.text--p1.text--white.text--center
+					img(src="img/logo-nuevasemana.png", alt="")
+
+					p LA NUEVA SEMANA, INC.  
+					p PO BOX 2344 Paletine, IL 60078 
+					p Telefono (847) 239-4815
+					p Fax (847) 890-6327 
+					p info@lanuevasemana.com
+				.contact__form
+					include form.jade
