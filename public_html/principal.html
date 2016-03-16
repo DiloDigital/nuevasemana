@@ -1,19 +1,21 @@
 
 <main id="main" role="main">
   <section class="noticias">
-    <h2 class="titulo">Ultimas Noticias</h2>
-    <div class="noticias__box">
-      <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
-      <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
-      <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
-      <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
-      <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
-      <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
-      <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
-      <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
-    </div><a href="#" class="btn_suscribe">Suscríbete</a>
+    <div class="max-width wrap--small">
+      <h2 class="titulo">Ultimas Noticias</h2>
+      <div class="noticias__box flex-grid">
+        <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+        <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+        <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+        <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+        <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+        <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+        <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+        <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt=""/></a></div>
+      </div><a href="#" class="btn_suscribe">Suscríbete</a>
+    </div>
   </section>
-  <section class="ediciones">
+  <section class="ediciones wrap--small">
     <h2 class="titulo">Ediciones Impresas</h2>
     <div class="ediciones__box">
       <div class="ediciones__item"><img src="img/imagen2.jpg" alt=""/></div>
@@ -21,20 +23,41 @@
       <div class="ediciones__item"><img src="img/imagen2.jpg" alt=""/></div>
       <div class="ediciones__item"><img src="img/imagen2.jpg" alt=""/></div>
     </div>
-    <div class="busqueda"> 
-      <div class="entrada">
-        <input type="text" name="name_ano" autofocus="autofocus" placeholder="Año" required="required"/>
+    <div class="sort">
+      <div class="collection-sort">
+        <label>Año</label>
+        <select>
+          <option value="var">Año</option>
+          <option value="var">2016</option>
+          <option value="var">2015</option>
+          <option value="var">2014</option>
+          <option value="var">2013</option>
+        </select>
       </div>
-      <div class="entrada">
-        <input type="text" name="name_mes" autofocus="autofocus" placeholder="Mes" required="required"/>
+      <div class="collection-sort">
+        <label>Mes</label>
+        <select>
+          <option value="var">Mes</option>
+          <option value="var">Dic</option>
+          <option value="var">Ago</option>
+          <option value="var">Abril</option>
+          <option value="var">Ene</option>
+        </select>
       </div>
-      <div class="entrada">
-        <input type="text" name="name_edicion" autofocus="autofocus" placeholder="Edicion" required="required"/>
+      <div class="collection-sort">
+        <label>Dia</label>
+        <select>
+          <option value="var">Dia</option>
+          <option value="var">31</option>
+          <option value="var">16</option>
+          <option value="var">08</option>
+          <option value="var">01</option>
+        </select>
       </div>
       <div class="descarga"><a href="#">Descargar</a></div>
     </div>
   </section>
-  <section class="suscribe">
+  <section class="suscribe wrap--small">
     <h2 class="titulo">¿Por que Suscribirte?</h2>
     <div class="suscribe__box">
       <div class="suscribe__item"><img src="img/imagen3.jpg" alt=""/></div>
@@ -42,7 +65,7 @@
       <div class="suscribe__item"><img src="img/imagen3.jpg" alt=""/></div>
     </div><a href="#" class="btn_suscribe">Suscribete</a>
   </section>
-  <section class="contact">
+  <section class="contact wrap--tiny">
     <div class="contact__box">
       <div class="contact__left"><img src="img/logo-nuevasemana.png" alt=""/>
         <p>LA NUEVA SEMANA, INC.  </p>

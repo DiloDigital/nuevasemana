@@ -1,31 +1,61 @@
 main#main(role="main")
 	section.noticias
-		h2.titulo Ultimas Noticias
-		.noticias__box
-			-for(var i=0; i<8; i++)
-				.noticias__item
-					a(href="#")
-						img(src="img/imagen.jpg", alt="")
+		.max-width.wrap--small
+			h2.titulo Ultimas Noticias
+			.noticias__box.flex-grid
+				-for(var i=0; i<8; i++)
+					.noticias__item
+						a(href="#")
+							img(src="img/imagen.jpg", alt="")
 
-		a(href="#").btn_suscribe Suscríbete
+			a(href="#").btn_suscribe Suscríbete
 
-	section.ediciones
+	section.ediciones.wrap--small
 		h2.titulo Ediciones Impresas
 		.ediciones__box
 			-for(var i=0; i<4; i++)
 				.ediciones__item
 					img(src="img/imagen2.jpg", alt="")
-		.busqueda 
-			.entrada
-				input(type="text", name="name_ano", autofocus, placeholder="Año", required)
-			.entrada
-				input(type="text", name="name_mes", autofocus, placeholder="Mes", required)
-			.entrada
-				input(type="text", name="name_edicion", autofocus, placeholder="Edicion", required)
+
+		.sort
+			.collection-sort
+				label Año
+				select
+					option(value="var") Año
+					option(value="var") 2016
+					option(value="var") 2015
+					option(value="var") 2014
+					option(value="var") 2013
+			.collection-sort
+				label Mes
+				select
+					option(value="var") Mes
+					option(value="var") Dic
+					option(value="var") Ago
+					option(value="var") Abril
+					option(value="var") Ene
+			.collection-sort
+				label Dia
+				select
+					option(value="var") Dia
+					option(value="var") 31
+					option(value="var") 16
+					option(value="var") 08
+					option(value="var") 01
+					
+					
 			.descarga
 				a(href="#") Descargar
 
-	section.suscribe
+		//- .busqueda 
+		//- 	.entrada
+		//- 		input(type="text", name="name_ano", autofocus, placeholder="Año", required)
+		//- 	.entrada
+		//- 		input(type="text", name="name_mes", autofocus, placeholder="Mes", required)
+		//- 	.entrada
+		//- 		input(type="text", name="name_edicion", autofocus, placeholder="Edicion", required)
+
+	section.suscribe.wrap--small
 		h2.titulo ¿Por que Suscribirte?
 		.suscribe__box
 			-for(var i=0; i<3; i++)
@@ -34,7 +64,7 @@ main#main(role="main")
 		
 		a(href="#").btn_suscribe Suscribete
 
-	section.contact
+	section.contact.wrap--tiny
 			
 		.contact__box
 			.contact__left
