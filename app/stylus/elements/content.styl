@@ -1,4 +1,4 @@
-edit()
+//edit()
 
 body
 	margin 0 auto
@@ -10,30 +10,35 @@ body
 	h1, h2, h3
 		margin-top 0
 	
-
-//***********
-// HEADER
-//***********
-	
 nav.main-nav
 	display flex
 	justify-content space-between
+	
 	padding 2em 7%
 	
 	.logo
 		img
 			width 75%
 			height auto
-	.btn_menu-mobile
-		display none
-	.main-nav__cont
+	.toggle-menu
 		align-self flex-end
-		.main-nav__list
+		color red
+		+above(b2)
+			display none
+	
+	nav
+		display none
+		align-self flex-end
+		flex-direction column
+		+above(b2)
+			display flex!important
+		ul
 			display flex
 			align-self flex-end
-			.main-nav__item
+			flex-direction column
+			li
 				list-style none
-				a.main-nav__link
+				a
 					padding 0 0.8em
 					text-decoration none
 					color grey_dark
@@ -42,17 +47,6 @@ header
 		p	
 			margin-bottom 2em
 
-/*a.btn_suscribe
-	display inline-block
-	text-decoration none
-	text-align center
-	color white
-	background yellow
-	box-shadow 3px 3px 7px black
-	padding 10px 50px
-	border-radius 10px				
-	font-size 1.8em
-	font-weight bold*/
 
 //**********
 // MAIN
@@ -66,24 +60,12 @@ section.ediciones
 		display none
 	.collection-sort
 		select
-			border-radius 10px
+			background none 
+			border 1px solid white
+			border-radius 8px
 			width 100%
 			padding 0.5em 0
 			
-	/*.descarga
-		a
-			width 100%
-			margin auto
-			text-align center
-			font-weight bold
-			font-size 1.5rem
-			display block
-			text-decoration none				
-			color white				
-			background #f6c31b
-			padding 0.16em 0
-			border-radius 10px*/
-								
 section.suscribe
 	.suscribe__box
 		justify-content center
@@ -98,9 +80,7 @@ section.contact
 		flex-direction column
 	.contact__left
 		p
-			//line-height 0
 			margin 0.5em 0
-			
 		img
 			padding 1em 0
 			width 90%
@@ -119,13 +99,12 @@ section.contact
 		.contact__formulario
 			width auto
 							
-				
 footer
 	display block
 	padding 20px
 	
 //********
-//WIDTH
+//Helpers
 //********
 
 	
