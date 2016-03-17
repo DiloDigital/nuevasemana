@@ -8,9 +8,9 @@ main#main(role="main")
 						a(href="#")
 							img(src="img/imagen.jpg", class="img-responsive", alt="")
 
-			a(href="#").btn_suscribe Suscríbete
+			a(href="#", class="btn__suscribete") Suscríbete
 
-	section.ediciones.bg--blue-dark.box
+	section.ediciones.box
 		div.max-width.text--center
 			h2.title--sub3.text--white Ediciones Impresas
 			.ediciones__box.grid-2-medium-4
@@ -43,10 +43,7 @@ main#main(role="main")
 						option(value="var") 16
 						option(value="var") 08
 						option(value="var") 01
-						
-						
-				.descarga
-					a(href="#") Descargar
+				a(href="#", class="btn__descarga") Descarga
 
 	section.suscribe.wrap--small.bg--white.box
 		div.max-width.text--center
@@ -55,8 +52,9 @@ main#main(role="main")
 				-for(var i=0; i<3; i++)
 					.suscribe__item
 						img(src="img/imagen3.jpg", class="img-responsive", alt="")
+			a(href="#", class="btn__suscribete") Suscríbete
 			
-			a(href="#").btn_suscribe Suscríbete
+				
 
 	section.contact.box-min.bg--blue-dark
 		div.max-width.text--center
