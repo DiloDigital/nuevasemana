@@ -1,4 +1,4 @@
-//edit()
+edit()
 
 body
 	margin 0 auto
@@ -12,33 +12,38 @@ body
 	
 nav.main-nav
 	display flex
-	justify-content space-between
-	
+	flex-direction column
 	padding 2em 7%
-	
+	+above(b2)
+		flex-direction row
+		justify-content space-between
+		
 	.logo
 		img
-			width 75%
+			width 100%
 			height auto
+			max-width 240px
+			
+			
 	.toggle-menu
-		align-self flex-end
 		color red
 		+above(b2)
 			display none
+			background verde
 	
-	nav
-		display none
-		align-self flex-end
-		flex-direction column
+	.main-nav__cont
 		+above(b2)
 			display flex!important
-		ul
-			display flex
+			background red
 			align-self flex-end
-			flex-direction column
-			li
+		ul.main-nav__list
+			li.main-nav__item
+				display flex
+				flex-direction column
 				list-style none
-				a
+				+above(b2)
+					flex-direction row
+				a.main-nav__link
 					padding 0 0.8em
 					text-decoration none
 					color grey_dark
