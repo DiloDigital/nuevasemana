@@ -7,6 +7,9 @@ body
 	font-size 16px
 	font-size 1rem
 	min-height 100vh
+	h1, h2, h3
+		margin-top 0
+	
 
 //***********
 // HEADER
@@ -15,8 +18,9 @@ body
 nav.main-nav
 	display flex
 	justify-content space-between
-	//padding-top 2.5em
-	//padding-bottom 2em
+	padding-top 2.5em
+	padding-bottom 2em
+	padding 0 7%
 	
 	.logo
 		img
@@ -37,19 +41,10 @@ nav.main-nav
 					padding 0 0.8em
 					text-decoration none
 					color grey_dark
-header.header
-	color blanco
-	//background #1976D2
-	padding-top 2em
-	padding-bottom 4em
-	//background-color rgba(blanco,0.7)
-	
-	//h1
-		//color green
-	p	
-		//color #1f5f85
-		//font-size 16px
-		margin-bottom 2em
+header
+	.header
+		p	
+			margin-bottom 2em
 		
 
 a.btn_suscribe
@@ -69,96 +64,20 @@ a.btn_suscribe
 //**********
 
 section.noticias
-	padding-top 1em
-	padding-bottom 3em
-	//text-align center
-	/*h2.titulo 
-		font-size 3.1em
-		font-weight bold*/
-
-/*.noticias__box
-	margin-bottom 3.5em
-	+above(b2)
-		padding 0 6%
 	
-	.noticias__item
-		width calc(100% - 2em)
-		+above(b1)
-			width calc(50% - 2em)
-		+above(b2)
-			width calc(25% - 2.8em)
-
-		margin 0.7em
-		img
-			width 100%*/
-			
-
 					
 section.ediciones
-	padding-top 4em
-	padding-bottom 6em
-	//background #022233
 	
-	//text-align center
-	/*h2.titulo
-		color blanco
-		font-size 3em
-		font-weight bold*/
-.ediciones__box
-	display flex
-	flex-wrap wrap
-	justify-content center
-	padding 0 4%
-	margin-bottom 7.5em
-	+above(b2)
-		padding 0 6%
-		
-	.ediciones__item
-		
-		width calc(100% - 2em)
-		
-		+above(b1)
-			width calc(50% - 2em)
-		+above(b2)
-			width calc(25% - 2.8em)
-			
-
-		margin 0.7em
-		img
-			width 100%
-
-
 .sort
-	
-	display flex
-	justify-content center
-	padding 0 6%
 	label
 		display none
 	.collection-sort
-		//align-self flex-end
-		width calc(25% - 2.8em)
-		margin 0% 0%
-		padding 0% 0%
-		//border 2px solid white
-		margin 0.7em
-		opacity 1
-		//color white
-	
 		select
 			border-radius 10px
 			width 100%
 			padding 0.5em 0
 			
 	.descarga
-		//align-self center
-		//border 2px solid #000
-		//margin 0 0.5em
-		/*+above(b2)
-			padding 0 7% */
-		width calc(25% - 2.8em)
-		margin 0.7em
-		
 		a
 			width 100%
 			margin auto
@@ -169,271 +88,95 @@ section.ediciones
 			text-decoration none				
 			color white				
 			background #f6c31b
-			//box-shadow: 3px 3px 7px black
 			padding 0.16em 0
 			border-radius 10px
 
 
 								
 section.suscribe
-	background #fff
-	text-align center
-	padding-top 6em
-	padding-bottom 6em
-
-	/*h2.titulo	
-		font-size 3em
-		font-weight bold*/
-	
-.suscribe__box
-	display flex
-	flex-wrap wrap
-	justify-content center
-	padding 0 4%
-	+above(b2)
-		padding 0 6%
-		
+	.suscribe__box
+		justify-content center
 	.suscribe__item
-		padding-bottom 2em
-		width calc(70% - 2em)
-		
-		+above(b1)
-			width calc(50% - 2em)
-		+above(b2)
-			width calc(30% - 2em)
-			//margin 1em
-
-		margin 1.5em
 		img
-			width 100%
 			border solid 6px #2994da
 			border-radius 50%
-			
-			
+			width calc(100% - 12px) 
+
 		
 section.contact
-	//background rgba(verde, 0.6)
-	//padding-top 2em
-	//padding-bottom 4em
-
-	//background #022233
-	.contact__box
-		display flex
+	+above(b1)
 		flex-direction column
-		padding 4em 0
-		
-		+above(b1)
-			//align-items center
-			//padding 0 15%
+	.contact__left
+		p
+			line-height 0
+			margin 1.3em 0
+		img
+			width 90%
+			max-width 280px
 		+above(b2)
-			flex-direction row
-			justify-content center
-			//padding-top 4em
-				
-		.contact__left
-			//text-align center
-			//color white			
-			//font-size 20px
-			//font-size 10px
-			//margin 0 80px
+			text-align left
 			
-			p
-				line-height 0
-				margin 1.3em 0
-				
-			img
-				width 90%
-			+above(b2)
-				text-align left
-		
-		.contact__form
-			//padding-top 3em
-			.contact__information
-				//color blanco
-				text-align center
-				h2
-					display inline
-					//font-size 2.5em
-					//font-weight bold
-					//line-height 0.5
-			.contact__formulario
-				+above(b1)
-					width 430px
-				
+	
+	.contact__form
+		.contact__information
+			text-align center
+			h2
+				display inline
+		.contact__formulario
+			background yellow 
+							
 				
 footer
 	display block
-	//text-align center
-	//background #308fcb	
 	padding 20px
 	
-
-
-
 //********
-//tablet
+//WIDTH
 //********
-
-+above(b1)
-	.noticias-box
-		background red
-+above(b2)
-	.noticias-box
-		background peru
-+above(b3)
-	.noticias-box
-		background verde
-	
-+above(b4)
-	.noticias-box
-		background blue
-
-
-.wrap
-	&--tiny
-		padding 0 10%
-	&--small
-		padding 0 7%
-
-
-
-/*.grid-1
-	width calc(100% - 2em)
-.grid-1.5
-	width calc(70% - 2em)
-.grid-2
-	width calc(50% - 2em)
-.grid-3
-	width calc(33.33% - 2em)
-.grid-4
-	width calc(25% - 2em)
-	
-.wrap
-	&--tiny
-		padding 0 10%
-	&--small
-		padding 0 7%
-	&--medium
-		padding 0 4%
-	&--large
-		padding 0 2.5%*/
-		
-/*.flex-grid
-	display flex
-	flex-wrap wrap
-	justify-content center*/
-	
-.color-peru
-	background peru 
-	
-
 
 	
 [class*=grid-]
 	display flex
 	flex-direction row
 	flex-wrap wrap
-	justify-content center
+	justify-content space-between
 	& > *
 		
-		width calc(100% * 1 / 1 - 1em - 0.1px)
+		width calc(100% * 1 / 1 - 2em - 0.1px)
 		background yellow
+		margin 0.7em
 		
-		//display inline-block
-		//flex 0 0 auto
-		//flex-direction row
-		//flex-wrap wrap
-
-@media (min-width:480px)
++above(b1)
 	[class*="grid-2"]
 		& > *
-			width calc(100% * 1 / 2 - 1em - .01px)
+			width calc(100% * 1 / 2 - 2em - .01px)
+			background blue
+	[class*="grid-1_1"]
+		& > *
+			width calc(100% * 1 / 1 - 2em - .01px)
 			background blue
 
-@media (min-width:768px)
++above(b2)
 	[class*="-medium-4"]
 		& > *
-			width calc(100% * 1 / 4 - 1em - .01px)
+			width calc(100% * 1 / 4 - 2em - .01px)
 			background verde
-    
-
-/*@media (max-width:480px)
-	[class*="-tiny-1"]
+	[class*="-medium-3"]
 		& > *
-			width calc(100% * 1 / 1 - 1em - .01px)
-			background peru*/
-			
-
+			width calc(100% * 1 / 3 - 2em - .01px)
+			background verde
+	[class*="-medium-2"]
+		& > *
+			width calc(100% * 1 / 2 - 2em - .01px)
+			background red
 	
 .box
-	padding 10rem 7%
-
-@media (min-width:1601px)
-	.box
-		padding 8rem 17.5%
-
-@media (min-width:1281px)
-	.box
-		padding 8rem 13.5%
-
-@media (min-width:1025px)
-	.box
-		padding 6rem 7%
-
-@media (min-width:481px)
-	.box,.box-large
-		padding 4rem 5%
-
-
-
-
-/*
-.box-large
-	padding 10rem 7%
-	padding 10rem 13.5%
-	padding 10rem 17.5%
-
-.box-small
-	padding 6rem 12.5%
-	padding 6rem 15%
-	padding 6rem 20%
-
+	padding 4rem 2%
 .box-mini
-	padding 4rem 15.5%
-	padding 4rem 16%
-	padding 4rem 22.5%*/
-
-/*@media (min-width:481px)
-	.box,.box-large
-		padding 4rem 5%
-
-@media (min-width:1025px)
+	padding 4rem 2%
+	
++above(b2)
 	.box
-		padding 6rem 7%
-
-.box-large
-	padding 10rem 7%
-	padding 10rem 13.5%
-	padding 10rem 17.5%
-
-.box-small
-	padding 6rem 12.5%
-	padding 6rem 15%
-	padding 6rem 20%
-
-.box-mini
-	padding 4rem 15.5%
-	padding 4rem 16%
-	padding 4rem 22.5%
-
-@media (min-width:1281px)
-	.box
-		padding 8rem 13.5%
-
-@media (min-width:1601px)
-	.box
-		padding 8rem 17.5%*/
-
-/*@media (min-width:641px)
-	body
-		padding-top 6rem*/
+		padding 4rem 7%
+	.box-mini
+		padding 4rem 15%

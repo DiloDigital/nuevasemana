@@ -1,6 +1,6 @@
 main#main(role="main")
-	section.noticias.bg--white.text--center
-		div.max-width
+	section.noticias.bg--white.box
+		div.max-width.text--center
 			h2.title--sub2 Ultimas Noticias
 			.noticias__box.grid-2-medium-4
 				-for(var i=0; i<8; i++)
@@ -10,15 +10,15 @@ main#main(role="main")
 
 			a(href="#").btn_suscribe Suscríbete
 
-	section.ediciones.wrap--small.bg--blue-dark.text--center
-		div.max-width
+	section.ediciones.bg--blue-dark.box
+		div.max-width.text--center
 			h2.title--sub3.text--white Ediciones Impresas
-			.ediciones__box
+			.ediciones__box.grid-2-medium-4
 				-for(var i=0; i<4; i++)
 					.ediciones__item
-						img(src="img/imagen2.jpg", alt="")
+						img(src="img/imagen2.jpg", class="img-responsive", alt="")
 
-			.sort.text--p1.text--white
+			.sort.text--p1.grid-2-medium-4.text--white
 				.collection-sort
 					label Año
 					select
@@ -48,20 +48,20 @@ main#main(role="main")
 				.descarga
 					a(href="#") Descargar
 
-	section.suscribe.wrap--small.bg--white
-		div.max-width
+	section.suscribe.wrap--small.bg--white.box
+		div.max-width.text--center
 			h2.title--sub2.text--black ¿Por que Suscribirte?
-			.suscribe__box
+			.suscribe__box.grid-2-medium-3
 				-for(var i=0; i<3; i++)
 					.suscribe__item
-						img(src="img/imagen3.jpg", alt="")
+						img(src="img/imagen3.jpg", class="img-responsive", alt="")
 			
-			a(href="#").btn_suscribe Suscribete
+			a(href="#").btn_suscribe Suscríbete
 
-	section.contact.wrap--tiny.bg--blue-dark
-		div.max-width
-			.contact__box
-				.contact__left.text--p1.text--white.text--center
+	section.contact.box
+		div.max-width.text--center
+			.contact__box.grid-1_1-medium-2
+				.contact__left.text--p1.text--white
 					img(src="img/logo-nuevasemana.png", alt="")
 
 					p LA NUEVA SEMANA, INC.  
