@@ -1,4 +1,10 @@
 main#main(role="main")
+	section.banner.bg--blue.box
+		div.max-width.text--center
+			h1.title--main.text--white La Nueva Semana
+			p.text--p2.text--white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam magni, optio quidem nesciunt dolores velit consectetur
+			a(href="#suscribete").btn__suscribete Suscríbete
+
 	section.noticias.bg--white.box
 		div.max-width.text--center
 			h2.title--sub2 Ultimas Noticias
@@ -8,7 +14,7 @@ main#main(role="main")
 						a(href="#")
 							img(src="img/imagen.jpg", class="img-responsive", alt="")
 
-			a(href="#", class="btn__suscribete") Suscríbete
+			a(href="#suscribete", class="btn__suscribete") Suscríbete
 
 	section.ediciones.bg--blue-dark.box
 		div.max-width.text--center
@@ -52,9 +58,7 @@ main#main(role="main")
 				-for(var i=0; i<3; i++)
 					.suscribe__item
 						img(src="img/imagen3.jpg", class="img-responsive", alt="")
-			a(href="#", class="btn__suscribete") Suscríbete
-			
-				
+			a(href="#suscribete", class="btn__suscribete") Suscríbete
 
 	section.contact.box-min.bg--blue-dark
 		div.max-width.text--center
@@ -67,5 +71,5 @@ main#main(role="main")
 					p Telefono (847) 239-4815
 					p Fax (847) 890-6327 
 					p info@lanuevasemana.com
-				.contact__form
+				.contact__form#suscribete
 					include form.jade

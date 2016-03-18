@@ -3,25 +3,29 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="fontello.css"/>
   <title>Nueva Semana</title>
 </html>
 <body>
-  <nav id="navigation" role="navigation" class="main-nav">
-    <div class="logo"><a href="#"><img src="img/logo-nuevasemana.png" width="200" height="60"/></a></div>
-    <div id="menu" class="toggle-menu">menu</div>
-    <div id="target" class="main-nav__cont">
-      <ul class="main-nav__list non-margin">
-        <li class="main-nav__item list-none text--p2"><a href="#" class="main-nav__link">Blog</a><a href="#" class="main-nav__link">Ediciones</a><a href="#" class="main-nav__link">Contacto</a></li>
-      </ul>
+  <header id="header" role="header" class="header">
+    <div class="logo"><a href="#"><img src="img/logo-nuevasemana.png" width="200" height="60"/></a>
+      <div id="menu" class="toggle-menu icon-menu"></div>
     </div>
-  </nav>
-  <header id="header" role="banner" class="text--center bg--blue">
-    <div class="header box">
-      <h1 class="title--main text--white">La Nueva Semana</h1>
-      <p class="text--p2 text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam magni, optio quidem nesciunt dolores velit consectetur</p><a href="#" class="btn__suscribete">Suscríbete</a>
-    </div>
+    <nav id="navigation" role="navigation" class="main-nav">
+      <div id="target" class="main-nav__cont">
+        <ul class="main-nav__list non-margin">
+          <li class="main-nav__item list-none"><a href="#" class="main-nav__link">Blog  </a><a href="#" class="main-nav__link">Ediciones</a><a href="#" class="main-nav__link">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main id="main" role="main">
+    <section class="banner bg--blue box">
+      <div class="max-width text--center">
+        <h1 class="title--main text--white">La Nueva Semana</h1>
+        <p class="text--p2 text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam magni, optio quidem nesciunt dolores velit consectetur</p><a href="#suscribete" class="btn__suscribete">Suscríbete</a>
+      </div>
+    </section>
     <section class="noticias bg--white box">
       <div class="max-width text--center">
         <h2 class="title--sub2">Ultimas Noticias</h2>
@@ -34,7 +38,7 @@
           <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt="" class="img-responsive"/></a></div>
           <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt="" class="img-responsive"/></a></div>
           <div class="noticias__item"><a href="#"><img src="img/imagen.jpg" alt="" class="img-responsive"/></a></div>
-        </div><a href="#" class="btn__suscribete">Suscríbete</a>
+        </div><a href="#suscribete" class="btn__suscribete">Suscríbete</a>
       </div>
     </section>
     <section class="ediciones bg--blue-dark box">
@@ -87,7 +91,7 @@
           <div class="suscribe__item"><img src="img/imagen3.jpg" alt="" class="img-responsive"/></div>
           <div class="suscribe__item"><img src="img/imagen3.jpg" alt="" class="img-responsive"/></div>
           <div class="suscribe__item"><img src="img/imagen3.jpg" alt="" class="img-responsive"/></div>
-        </div><a href="#" class="btn__suscribete">Suscríbete</a>
+        </div><a href="#suscribete" class="btn__suscribete">Suscríbete</a>
       </div>
     </section>
     <section class="contact box-min bg--blue-dark">
@@ -100,7 +104,7 @@
             <p>Fax (847) 890-6327 </p>
             <p>info@lanuevasemana.com</p>
           </div>
-          <div class="contact__form">
+          <div id="suscribete" class="contact__form">
             <div class="contact__information">
               <h2 class="title--sub2 text--white">Contáctanos</h2>
               <p class="text--p1 text--white">Queremos escuchar lo que tienes que decir</p>

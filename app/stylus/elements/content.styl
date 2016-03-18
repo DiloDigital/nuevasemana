@@ -10,66 +10,68 @@ body
 	h1, h2, h3
 		margin-top 0
 	
-nav.main-nav
-	display flex
-	flex-direction column
-	padding 2em 7%
+header.header
+	padding 1em 7%
 	+above(b2)
-		flex-direction row
+		display flex
 		justify-content space-between
-		
 	.logo
+		display  flex
+		justify-content space-between
 		img
 			width 100%
 			height auto
 			max-width 240px
-			
-			
-	.toggle-menu
-		color red
-		+above(b2)
-			display none
-			background verde
+		.toggle-menu
+			align-self center
+			color grey_dark
+			font-size 2em
+			+above(b2)
+				display none
 	
-	.main-nav__cont
-		+above(b2)
-			display flex!important
-			background red
-			align-self flex-end
-		ul.main-nav__list
-			li.main-nav__item
-				display flex
-				flex-direction column
-				list-style none
-				+above(b2)
-					flex-direction row
-				a.main-nav__link
-					padding 0 0.8em
-					text-decoration none
-					color grey_dark
-header
-	.header
-		p	
-			margin-bottom 2em
+	nav.main-nav
+		align-self flex-end
+		.main-nav__cont
+			display none
+			+above(b2)
+				display flex!important
+			ul.main-nav__list
+					
+				li.main-nav__item
+					display flex
+					flex-direction column
+					+above(b2)
+						flex-direction row
+					a.main-nav__link
+						padding 0 0.8em
+						text-decoration none
+						color grey_dark
+						&:hover
+							background rgba(0, 0, 0, .3)
 
 
 //**********
 // MAIN
 //**********
 
+
+section.banner
+	p	
+		margin-bottom 2em
+
 section.noticias
 					
 section.ediciones
-.sort
-	label
-		display none
-	.collection-sort
-		select
-			background none 
-			border 1px solid white
-			border-radius 8px
-			width 100%
-			padding 0.5em 0
+	.sort
+		label
+			display none
+		.collection-sort
+			select
+				background none 
+				border 1px solid white
+				border-radius 8px
+				width 100%
+				padding 0.5em 0
 			
 section.suscribe
 	.suscribe__box
