@@ -1,0 +1,75 @@
+main#main(role="main")
+	section.banner.bg--blue.box
+		div.max-width.text--center
+			h1.title--main.text--white La Nueva Semana
+			p.text--p2.text--white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam magni, optio quidem nesciunt dolores velit consectetur
+			a(href="#suscribete").btn__suscribete Suscríbete
+
+	section.noticias.bg--white.box
+		div.max-width.text--center
+			h2.title--sub2 Ultimas Noticias
+			.noticias__box.grid-2-medium-4
+				-for(var i=0; i<8; i++)
+					.noticias__item
+						a(href="#")
+							img(src="img/imagen.jpg", class="img-responsive", alt="")
+
+			a(href="#suscribete", class="btn__suscribete") Suscríbete
+
+	section.ediciones.bg--blue-dark.box
+		div.max-width.text--center
+			h2.title--sub3.text--white Ediciones Impresas
+			.ediciones__box.grid-2-medium-4
+				-for(var i=0; i<4; i++)
+					.ediciones__item
+						img(src="img/imagen2.jpg", class="img-responsive", alt="")
+
+			.sort.text--p1.grid-2-medium-4.text--white
+				.collection-sort
+					label Año
+					select
+						option(value="var") Año
+						option(value="var") 2016
+						option(value="var") 2015
+						option(value="var") 2014
+						option(value="var") 2013
+				.collection-sort
+					label Mes
+					select
+						option(value="var") Mes
+						option(value="var") Dic
+						option(value="var") Ago
+						option(value="var") Abril
+						option(value="var") Ene
+				.collection-sort
+					label Dia
+					select
+						option(value="var") Dia
+						option(value="var") 31
+						option(value="var") 16
+						option(value="var") 08
+						option(value="var") 01
+				a(href="#", class="btn__descarga") Descarga
+
+	section.suscribe.wrap--small.bg--white.box
+		div.max-width.text--center
+			h2.title--sub2.text--black ¿Por que Suscribirte?
+			.suscribe__box.grid-2-medium-3
+				-for(var i=0; i<3; i++)
+					.suscribe__item
+						img(src="img/imagen3.jpg", class="img-responsive", alt="")
+			a(href="#suscribete", class="btn__suscribete") Suscríbete
+
+	section.contact.box-min.bg--blue-dark
+		div.max-width.text--center
+			.contact__box.grid-1_1-medium-2
+				.contact__left.text--p1.text--white
+					img(src="img/logo-nuevasemana.png", alt="")
+
+					p LA NUEVA SEMANA, INC.  
+					p PO BOX 2344 Paletine, IL 60078 
+					p Telefono (847) 239-4815
+					p Fax (847) 890-6327 
+					p info@lanuevasemana.com
+				.contact__form#suscribete
+					include form.jade

@@ -1,0 +1,199 @@
+[class*=grid-]
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  margin-left -1em
+  letter-spacing -.31em
+  text-rendering optimizespeed
+  & > *
+    flex 0 0 auto
+    width calc(100% * 1 / 4 - 1em - .01px)
+    margin-left 1em
+    display inline-block
+
+[class*=grid-3]
+  & > *
+    width calc(100% * 1 / 3 - 1em - .01px)
+  & > .flex-item-double
+    width calc(100% * 2 / 3 - 1em - .01px)
+ 
+
+@media (max-width:768px)
+  [class*="-small-4"]
+    & > *
+      width calc(100% * 1 / 4 - 1em - .01px)
+      
+ [class*="-small-2"]
+  & > *
+    width calc(100% * 1 / 2 - 1em - .01px)
+    
+
+@media (max-width:480px)
+  [class*="-tiny-2"]
+    & > *
+      width calc(100% * 1 / 2 - 1em - .01px)
+
+[class*="-tiny-2"]>.flexitem-double,[class*="-tiny-1"]>*,[class*="-tiny-1"]>.flexitem-double
+  width calc(100% - 1em - .01px)
+
+.box,.box-large
+  padding 4rem 2.5%
+
+.box-mini,.box-small
+  padding 2rem 2.5%
+  padding 2rem 5%
+
+.box-primary
+  background-color #7f971b
+  color #fff
+
+.box-secondary
+  background-color #008cba
+  color #fff
+  [class*=f-table]
+    color #4a4949
+
+.box-third
+  background-color #f05f30
+  color #fff
+
+.box-invert
+  background #222526
+  color #f5f5f5
+
+.box-light
+  background #f5f5f5
+  color #4a4949
+  .dropdown
+    border 1px solid #9ea6a9
+    select
+      color #686866
+      background #f5f5f5
+    &:hover
+      border-color #848d91
+
+.box-extra-light
+  background #fcfcfc
+  color #4a4949
+
+@media (min-width:481px) .box,.box-large
+  padding 4rem 5%
+
+@media (min-width:1025px)
+  .box
+    padding 6rem 7%
+
+.box-large
+  padding 10rem 7%
+  padding 10rem 13.5%
+  padding 10rem 17.5%
+
+.box-small
+  padding 6rem 12.5%
+  padding 6rem 15%
+  padding 6rem 20%
+
+.box-mini
+  padding 4rem 15.5%
+  padding 4rem 16%
+  padding 4rem 22.5%
+
+@media (min-width:1281px)
+  .box
+    padding 8rem 13.5%
+
+@media (min-width:1601px)
+  .box
+    padding 8rem 17.5%
+
+@media (min-width:641px)
+  body
+    padding-top 6rem
+
+@media (min-width:1280px)
+  html
+    height 100%
+    
+
+
+
+
+
+
+
+/*@media (max-width:480px)
+  [class*="-tiny-1"]
+    & > *
+      width calc(100% * 1 / 1 - 1em - .01px)
+      background peru*/
+      
+
+
+  
+
+
+/*@media (min-width:1281px)
+  .box
+    padding 8rem 13.5%
+
+@media (min-width:1025px)
+  .box
+    padding 6rem 7%
+
+@media (min-width:481px)
+  .box,.box-large
+    padding 4rem 5%
+*/
+
+
+
+/*
+.box-large
+  padding 10rem 7%
+  padding 10rem 13.5%
+  padding 10rem 17.5%
+
+.box-small
+  padding 6rem 12.5%
+  padding 6rem 15%
+  padding 6rem 20%
+
+.box-mini
+  padding 4rem 15.5%
+  padding 4rem 16%
+  padding 4rem 22.5%*/
+
+/*@media (min-width:481px)
+  .box,.box-large
+    padding 4rem 5%
+
+@media (min-width:1025px)
+  .box
+    padding 6rem 7%
+
+.box-large
+  padding 10rem 7%
+  padding 10rem 13.5%
+  padding 10rem 17.5%
+
+.box-small
+  padding 6rem 12.5%
+  padding 6rem 15%
+  padding 6rem 20%
+
+.box-mini
+  padding 4rem 15.5%
+  padding 4rem 16%
+  padding 4rem 22.5%
+
+@media (min-width:1281px)
+  .box
+    padding 8rem 13.5%
+
+@media (min-width:1601px)
+  .box
+    padding 8rem 17.5%*/
+
+/*@media (min-width:641px)
+  body
+    padding-top 6rem*/

@@ -1,0 +1,17 @@
+.contact__information
+	h2.title--sub2.text--white Contáctanos
+	p.text--p1.text--white Queremos escuchar lo que tienes que decir
+.contact__formulario
+	form(action="enviamail1.php", class="funcionesform",  method="post")
+		.form__group
+			label(for="nombre") Nombre
+			input#nombre(type="text", name="nombre", class="form__control", placeholder="Tu nombre", required)
+		.form__group
+			label(for="email") Email
+			input#email(type="email", name="email", class="form__control", placeholder="Tu correo", required)
+		.form__group
+			label(mensaje) Mensaje
+			textarea#mensaje(name="mensaje", class="form__control", placeholder="Tu mensaje", required)
+		.form__submit
+			input#submit(type="submit", name="submit", value="Enviar Mensaje")
+		#form-messages
